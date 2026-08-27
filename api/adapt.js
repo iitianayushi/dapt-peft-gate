@@ -30,7 +30,7 @@ const PUBLISHED_INTERVENTIONS = ['prompt_only', 'retrieval', 'lora', 'qlora'];
 const HEX_40_REGEX = /^[0-9a-f]{40}$/;
 const HEX_64_REGEX = /^[0-9a-f]{64}$/;
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'METHOD_NOT_ALLOWED' });
   }
@@ -426,4 +426,4 @@ export default async function handler(req, res) {
       reasonCodes: finalReasonCodes
     });
   }
-}
+};
