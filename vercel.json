@@ -1,4 +1,9 @@
 {
-  "name": "adapt-peft-gate",
-  "version": "1.0.0"
- 
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/adapt",
+      "destination": "/api/adapt"
+    }
+  ]
+}
