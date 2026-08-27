@@ -1,0 +1,6 @@
+{
+  "name": "adapt-peft-gate",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "api/adapt.js"
+}
